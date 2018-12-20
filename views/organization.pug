@@ -1,0 +1,24 @@
+extends layout
+block content
+  .container-fluid
+    .row: .col-md-12
+      h1.section-title Instituciones
+      #main-container: .row
+        #sidebar.col-md-3.col-sm-3
+          .module
+            h3 ¿Que son las instituciones?
+            p Todas las dependencias, entidades y empresas productivas del estado que forman parte del Gobierno de la República; estados; municipios; y, organismos autónomos que publican en datos.gob.mx
+
+        #content.col-md-9.col-sm-9
+          include includes/search-form
+          .row
+            .col-md-4
+              .institution-card.result-item
+                a(href='/busca/organization/aem', style='display: block !important; height: 150px !important;')
+                  img(src='https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/aem.png', alt='aem')
+                p
+                  a(href='/busca/organization/aem')
+                    strong AEM
+                p
+                  a(href='/busca/organization/aem') Agencia Espacial Mexicana
+                p.datasets 9 Datos
