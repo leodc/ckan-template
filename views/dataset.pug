@@ -4,7 +4,8 @@ block content
     .row: .col-md-12
       h1.section-title Datos abiertos
       #main-container: .row
-        include includes/sidebar
+        #sidebar.col-md-3.col-sm-3
+          include includes/filter-collapsible
 
         #content.col-md-9.col-sm-9
           include includes/search-form
@@ -23,3 +24,12 @@ block content
                         = item.institution
                   .dataset-format-container
                     span.dataset-format(data-format=item.doc_type)= item.doc_type
+
+          section.module
+            .module-content
+              small
+                | Usted también puede acceder a este registro utilizando los 
+                a(href='/busca/packages?ver=%2F3') API
+                |  (ver 
+                a(href='http://docs.ckan.org/en/ckan-2.7.3/api/index.html') API Docs
+                | ).

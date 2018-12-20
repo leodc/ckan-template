@@ -17,7 +17,7 @@ Este proyecto está hecho en `Node 9.11.0`, el `CSS` propio para este repo es ge
 3. Ejecuta el script de desarrollo para levantar el servidor:
 `npm run dev`
 
-4. Y en tu navegador ve a: localhost:4000
+4. Y en tu navegador ve a: localhost:4000/dataset
 
 
 ## Licencia
