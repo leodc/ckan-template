@@ -1,6 +1,6 @@
 module.exports = (app) => {
-  const home = require('../controllers/home')
+  const dataset = require('../controllers/dataset')
 
-  // Home views
-  app.get('/', home.init)
+  // Dataset views
+  app.get('/dataset', dataset.init)
 }
