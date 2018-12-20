@@ -1,0 +1,41 @@
+// Submenu - Component
+// ----------------------------------
+//
+
+
+.submenu {
+  margin-bottom: 0;
+  float: right;
+
+  > li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 50px;
+
+    > a {
+      color: #545454;
+      &:hover { color: #0c9; }
+    }
+
+    &.active > a { color: #0c9; }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child { margin-right: 0; }
+  }
+
+  &.recortado {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    float: unset !important;
+
+    li {
+      margin-right: 12px !important;
+    }
+  }
+}

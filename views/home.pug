@@ -1,0 +1,25 @@
+extends layout
+block content
+  .container-fluid
+    .row: .col-md-12
+      h1.section-title Datos abiertos
+      #main-container: .row
+        include includes/sidebar
+
+        #content.col-md-9.col-sm-9
+          include includes/search-form
+          .row: .col-md-12: #datasets-container
+            each item in datasets
+              .dataset-item
+                .col-md-10.col-sm-10.col-xs-12
+                  h3
+                    span.tag-icon(class=item.tag_icon)
+                    a(href=item.tag_link)= item.title
+                  p= item.text
+                .col-md-2.col-sm-2.col-xs-12
+                  .dependency
+                    strong
+                      a(href=item.institution_link)
+                        = item.institution
+                  .dataset-format-container
+                    span.dataset-format(data-format=item.doc_type)= item.doc_type

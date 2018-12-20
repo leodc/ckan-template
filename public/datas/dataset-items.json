@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "tag_icon": "tag-economia",
+    "tag_link": "/busca/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
+    "title": "Indicadores Estratégicos/Población Subocupada por Nivel De Ingresos",
+    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
+    "institution": "STPS",
+    "institution_link": "/busca/organization/stps",
+    "doc_type": "CSV"
+  },
+  {
+    "id": 2,
+    "tag_icon": "tag-economia",
+    "tag_link": "/busca/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
+    "title": "Indicadores Estratégicos/Población Económicamente No Activa por Nivel De Instrucción",
+    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
+    "institution": "STPS",
+    "institution_link": "/busca/organization/stps",
+    "doc_type": "CSV"
+  },
+  {
+    "id": 3,
+    "tag_icon": "tag-economia",
+    "tag_link": "/busca/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
+    "title": "Indicadores Estratégicos/Población Ocupada - Subordinada y Remunerada por Nivel De Ingresos",
+    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
+    "institution": "STPS",
+    "institution_link": "/busca/organization/stps",
+    "doc_type": "CSV"
+  }
+]

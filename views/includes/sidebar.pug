@@ -1,0 +1,71 @@
+#sidebar.col-md-3.col-sm-3
+  #filter-by.panel-group.ficha-collapse
+    h3 Filtrar por
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#catego', aria-expanded='false', aria-controls='catego')
+            | Categorías
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#catego')
+      #catego.panel-collapse.collapse
+        .panel-body
+          a(href='#') Gobiernos locales (12)
+          a(href='#') Seguridad y justicia (11)
+          a(href='#') Economía (10)
+          a(href='#') Educación (9)
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#level', aria-expanded='false', aria-controls='level')
+            | Nivel de gobierno
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#level')
+      #level.panel-collapse.collapse
+        .panel-body
+          a(href='#') Autonomo (52)
+          a(href='#') Federal (31)
+          a(href='#') Estatal (7)
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#orgs', aria-expanded='false', aria-controls='orgs')
+            | Organizaciones
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#orgs')
+      #orgs.panel-collapse.collapse
+        .panel-body
+          a(href='#') CONABIO (4679)
+          a(href='#') GACM (283)
+          a(href='#') Estado de Jalisco (220)
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#groups', aria-expanded='false', aria-controls='groups')
+            | Grupos
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#groups')
+      #groups.panel-collapse.collapse
+        .panel-body
+          a(href='#') Cuidades Inteligentes (29)
+          a(href='#') #PapaenMex (21)
+          a(href='#') Tu gobierno en mapas (20)
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#tags', aria-expanded='false', aria-controls='tags')
+            | Etiquetas
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#tags')
+      #tags.panel-collapse.collapse
+        .panel-body
+          a(href='#') federal (3451)
+          a(href='#') Distribución potencial (1858)
+          a(href='#') GARP (1330)
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-parent='#filter-by', data-toggle='collapse', href='#formats', aria-expanded='false', aria-controls='formats')
+            | Formatos
+        button.collpase-button.collapsed(type='button', data-parent='#filter-by', data-toggle='collapse', href='#formats')
+      #formats.panel-collapse.collapse
+        .panel-body
+          a(href='#') SHP (4061)
+          a(href='#') CSV (1725)
+          a(href='#') XLS (1719)
+    a.footer-panel(href='#') Datos Ciudadanos | datamx.io

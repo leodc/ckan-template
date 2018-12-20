@@ -1,0 +1,20 @@
+#search-form.row
+  form.search-form.form-inline(method='get', data-module='select-switch')
+    .search-input.control-group.col-md-12.col-sm-12.form-group.search-keyword
+      input.form-control.block(type='text', name='q', value='', autocomplete='off', placeholder='Buscar datos...')
+      button(type='submit', value='search')
+        i.glyphicon.glyphicon-search
+    .col-md-7.col-sm-7.results-home
+      p
+        | 8.333 Datos en datos.gob.mx
+      em
+        | datos.gob.mx es el catálogo de Datos Abiertos del Gobierno de la República. El contenido y disponibilidad de los datos son responsabilidad de la institución publicante
+    .col-md-5.col-sm-5.form-group
+      label(for='order') Ordenar por
+      .custom-select
+        select#field-order-by.form-control(name='sort')
+          option(value='score desc, metadata_modified desc', selected='selected') Relevancia
+          option(value='title_string asc') Nombre Ascendente
+          option(value='title_string desc') Nombre Descendente
+          option(value='metadata_modified desc') Última modificación
+        button.btn.hide(type='submit') Ir

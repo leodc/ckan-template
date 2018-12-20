@@ -1,0 +1,49 @@
+// Dataset item - Component
+// ----------------------------------
+//
+
+
+.dataset-item,
+.result-item {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+
+.dataset-item {
+  h3 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+
+    > a {
+      position: relative;
+      display: block;
+      color: #474747;
+      font-size: 15px;
+      font-weight: 600;
+      padding-left: 10px;
+    }
+  }
+
+  .dataset-date {
+    height: 30px;
+    margin-bottom: 0;
+    position: relative;
+
+    > span {
+      position: absolute;
+      left: 45px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+#datasets-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
