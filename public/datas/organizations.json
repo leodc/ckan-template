@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Agencia Espacial Mexicana",
+    "acronym": "AEM",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/aem.png",
+    "dataset_url": "aem",
+    "total_datas": 9
+  },
+  {
+    "id": 2,
+    "name": "Aeropuertos y Servicios Auxiliares",
+    "acronym": "ASA",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/asa.png",
+    "dataset_url": "asa",
+    "total_datas": 29
+  },
+  {
+    "id": 3,
+    "name": "Administración Federal de Servicios Educativos en el Distrito Federal",
+    "acronym": "AFSEDF",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/afsedf.png",
+    "dataset_url": "afsedf",
+    "total_datas": 42
+  }
+]

@@ -12,13 +12,14 @@ block content
         #content.col-md-9.col-sm-9
           include includes/search-form
           .row
-            .col-md-4
-              .institution-card.result-item
-                a(href='/busca/organization/aem', style='display: block !important; height: 150px !important;')
-                  img(src='https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/aem.png', alt='aem')
-                p
-                  a(href='/busca/organization/aem')
-                    strong AEM
-                p
-                  a(href='/busca/organization/aem') Agencia Espacial Mexicana
-                p.datasets 9 Datos
+            each item in organizationItems
+              .col-md-4
+                .institution-card.result-item
+                  a.logo(href=`/organization/${item.dataset_url}`)
+                    img(src=item.logo_url, alt=item.acronym)
+                  p
+                    a(href=`/organization/${item.dataset_url}`)
+                      strong= item.acronym
+                  p
+                    a(href='/busca/organization/aem')= item.name
+                  p.datasets #{item.total_datas} Datos
