@@ -3,7 +3,8 @@
 //
 
 
-.institution-card {
+.institution-card,
+.group-card {
   height: 380px;
 
   .logo {
@@ -15,4 +16,8 @@
       margin: auto;
     }
   }
+}
+
+.group-card {
+  height: 270px;
 }

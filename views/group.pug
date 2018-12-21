@@ -1,0 +1,21 @@
+extends layout
+block content
+  .container-fluid
+    .row: .col-md-12
+      h1.section-title Instituciones
+      #main-container: .row
+        #sidebar.col-md-3.col-sm-3
+          .module
+            h3 ¿Que son los grupos?
+            p Puedes usar los grupos de CKAN para crear y administrar colecciones de conjuntos de datos. Esto se puede usar para catalogar conjuntos de datos de un proyecto concreto o un equipo, o de un tema en particular, o como una manera muy sencilla de ayudar a la gente a buscar y encontrar sus propios conjuntos de datos publicados.
+
+        #content.col-md-9.col-sm-9
+          include includes/search-form
+          .row
+            each item in groupItems
+              .col-md-4: .group-card.result-item
+                a.logo(href=`/group/${item.dataset_url}`)
+                  img(src=item.logo_url, alt=item.name)
+                p
+                  a(href=`/group/${item.dataset_url}`)
+                    strong= item.name

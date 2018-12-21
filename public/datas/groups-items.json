@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "alertaMX",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/grupos/alertamx.png",
+    "dataset_url": "alertamx"
+  },
+  {
+    "id": 2,
+    "name": "Atlas de Complejidad Económica",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/grupos/datos.png",
+    "dataset_url": "atlas-de-complejidad-economica"
+  },
+  {
+    "id": 3,
+    "name": "Calidad del aire",
+    "logo_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/grupos/datos.png",
+    "dataset_url": "calidad-del-aire"
+  }
+]
