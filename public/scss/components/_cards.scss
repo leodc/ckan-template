@@ -5,4 +5,14 @@
 
 .institution-card {
   height: 380px;
+
+  .logo {
+    display: block;
+    overflow: hidden;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
 }
