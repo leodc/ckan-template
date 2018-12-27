@@ -3,10 +3,11 @@ header.toolbar.breadcrumb-container
     .col-md-8.col-sm-12
       ul.breadcrumb
         li
-          a(href='/busca/dataset')
+          a(href='/dataset')
             i.glyphicon.glyphicon-home
-        li.active
-          a(href='https://datos.gob.mx/busca/dataset') Datos
+        each item, index in breadcrumbs
+          li(class=(index === breadcrumbs.length - 1 ? "active" : ""))
+            a(href=item.link)= item.name
     .col-md-4.col-sm-12
       ul.submenu
         li
