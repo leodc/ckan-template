@@ -1,0 +1,105 @@
+[
+  {
+    "attribute": "theme",
+    "title": "Categorías",
+    "menu": [
+      {
+        "url_param": "Salud",
+        "title": "Salud",
+        "total": 638
+      },
+      {
+        "url_param": "Educación",
+        "title": "Educación",
+        "total": 621
+      },
+      {
+        "url_param": "Energía+Y+Medio+Ambiente",
+        "title": "Energía Y Medio Ambiente",
+        "total": 590
+      },
+      {
+        "url_param": "Otros",
+        "title": "Otros",
+        "total": 575
+      },
+      {
+        "url_param": "Economía",
+        "title": "Economía",
+        "total": 547
+      },
+      {
+        "url_param": "Gobiernos+Locales",
+        "title": "Gobiernos Locales",
+        "total": 448
+      }
+    ]
+  },
+  {
+    "attribute": "vocab_gov_types",
+    "title": "Nivel de Gobierno",
+    "menu": [
+      {
+        "url_param": "Federal",
+        "title": "Federal",
+        "total": 4400
+      },
+      {
+        "url_param": "State",
+        "title": "State",
+        "total": 1212
+      },
+      {
+        "url_param": "Autonomo",
+        "title": "Autonomo",
+        "total": 40
+      },
+      {
+        "url_param": "Autonomous",
+        "title": "Autonomous",
+        "total": 28
+      },
+      {
+        "url_param": "Estatal",
+        "title": "Estatal",
+        "total": 1
+      },
+      {
+        "url_param": "Municipal",
+        "title": "Municipal",
+        "total": 1
+      }
+    ]
+  },
+  {
+    "attribute": "organization",
+    "title": "Organizaciones",
+    "menu": [
+      {
+        "url_param": "conabio",
+        "title": "CONABIO",
+        "total": 893
+      },
+      {
+        "url_param": "inegi",
+        "title": "INEGI",
+        "total": 718
+      },
+      {
+        "url_param": "estado-de-puebla",
+        "title": "Estado de Puebla",
+        "total": 543
+      },
+      {
+        "url_param": "gacm",
+        "title": "GACM",
+        "total": 593
+      },
+      {
+        "url_param": "estado-de-jalisco",
+        "title": "Estado de Jalisco",
+        "total": 448
+      }
+    ]
+  }
+]
