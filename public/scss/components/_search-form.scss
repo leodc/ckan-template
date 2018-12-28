@@ -41,6 +41,34 @@
       color: #d8d8d8;
     }
   }
+
+  .filters-list {
+    margin-top: 10px;
+
+    span {
+      font-weight: 300;
+    }
+
+    > span {
+      margin-left: 10px;
+
+      &:first-child { margin-left: 0; }
+    }
+  }
+
+  .filter-item {
+    color: #fff;
+    padding: 3px 7px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #0c9;
+
+    a {
+      color: #fff;
+      margin-left: 5px;
+      font-weight: 700;
+    }
+  }
 }
 
 .search-form {
