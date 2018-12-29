@@ -46,4 +46,10 @@
 #datasets-list {
   margin-top: 20px;
   margin-bottom: 20px;
+
+  .pic-doctype {
+    line-height: 4;
+
+    img { width: 40px; }
+  }
 }

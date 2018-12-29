@@ -7,5 +7,56 @@
   padding: 0;
   box-shadow: 1px 0 0 0 #d8d8d8;
 
+  > a {
+    display: block;
+    margin: 0 10px;
+    padding: 12px;
+  }
+
+  img {
+    margin: 30px 0;
+  }
+
+  h2, h3, h4, p, img {
+    padding: 0 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 10px;
+      border-bottom: 1px solid #d8d8d8;
+
+      &:last-child {
+        border: 0;
+      }
+
+      a { display: block; }
+    }
+  }
+
   .module { padding: 0 10px; }
+
+  .institution-name {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
+  .text-center {
+    a { display: block; }
+  }
+
+  .title-sidebar {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #545454;
+    margin: 0;
+    border: 1px solid #d8d8d8;
+    border-left: none;
+    border-right: none;
+    background-color: #f6f6f6;
+  }
 }
