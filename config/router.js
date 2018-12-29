@@ -5,6 +5,7 @@ module.exports = (app) => {
 
   // Dataset views
   app.get('/dataset', dataset.init)
+  app.get('/dataset/:resource', dataset.resource)
 
   // Organization views
   app.get('/organization', organization.init)

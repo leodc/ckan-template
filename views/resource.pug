@@ -1,0 +1,94 @@
+extends layout
+block content
+  .container-fluid
+    .row: .col-md-12
+      h1.section-title Datos abiertos
+      #main-container: .row
+        #sidebar.col-md-3.col-sm-3
+          h3.institution-name= source.institution
+          p.text-center
+            a(href=`/organization/${source.institution_url}`)
+              img(src=source.picture_url, alt=source.institution, width='200')
+          h4.title-sidebar Compartir en
+          ul.filters-menu
+            each item in source.socials
+              li
+                a(href=item.url, target='_blank')= item.name
+          a(href='https://datos.gob.mx/libreusomx')
+            img(src='https://cdn.datos.gob.mx/ckan/img/lu_t_b.png', alt='Libre Uso MX')
+
+        #content.col-md-9.col-sm-9
+          header.module-content
+            a.btn.btn-danger.report(href=`https://datos.gob.mx/reportar/?media_url=${source.report_url}`) Reportar
+            ul.nav.nav-tabs.nav-header
+              li.active
+                a(href=`/dataset/${source.url}`)
+                  i.glyphicon.glyphicon-th-list
+                  |  Conjunto de datos
+              li
+                a(href=`/dataset/activity/${source.url}`)
+                  i.glyphicon.glyphicon-time
+                  |  Actividad
+              li
+                a(href=`/dataset/groups/${source.url}`)
+                  i.glyphicon.glyphicon-th-large
+                  |  Grupos
+          h1= source.title
+          span.insert-comment-thread
+          h3.third-section-title Datos y Recursos
+          #datasets-list.container-fluid
+            each resource in source.resources
+              .resource-item.dataset-item.row(data-id=resource.id)
+                .col-md-1.col-sm-1.col-xs-2.pic-doctype
+                  img(src=resource.doctype_pic_url, alt=resource.doctype)
+                .col-md-8.col-sm-7.col-xs-10
+                  a.heading(href=`/dataset/${source.url}/resource/${resource.id}`, title=resource.title)
+                    h6= resource.title
+                  p.description= resource.text
+                .col-md-3.col-sm-4.col-xs-12
+                  a.btn.btn-block.btn-primary(href=resource.download_url, data-id=resource.id, data-name=resource.title, data-slug=resource.slug) Descargar
+                  a.btn.btn-block.btn-primary(href=`/dataset/${source.url}/resource/${resource.id}`) Más información       
+          h3.third-section-title Metadatos
+          .panel.panel-default
+            table.table.table-bordered
+              thead
+                tr
+                  th.th-header(scope='col', width='35%') Campo
+                  th.th-header(scope='col') Valor
+              tbody
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Email del publicador
+                  td.dataset-details(property='rdf:value')= source.metadatas.mail
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Frecuencia
+                  td.dataset-details(property='rdf:value')= source.metadatas.frequency
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') GUID
+                  td.dataset-details(property='rdf:value')= source.metadatas.guid
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Idioma
+                  td.dataset-details(property='rdf:value')= source.metadatas.language
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Modificado
+                  td.dataset-details(property='rdf:value')= source.metadatas.modified
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Nombre del publicador
+                  td.dataset-details(property='rdf:value')= source.metadatas.publisher_name
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Publicado
+                  td.dataset-details(property='rdf:value')= source.metadatas.published
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Tema
+                  td.dataset-details(property='rdf:value')= source.metadatas.topic
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Tipo del publicador
+                  td.dataset-details(property='rdf:value')= source.metadatas.publisher_type
+                tr(rel='dc:relation', resource='_:extra')
+                  th.dataset-label(scope='row', property='rdfs:label') Diccionario de Datos
+                  td.dataset-details(property='rdf:value')
+                    a(href=source.metadatas.url) Consultar
+          h3.third-section-title Etiquetas
+          ul.tags-list
+            each tag in source.tags
+              li
+                a.tag(href=`/dataset?tags=${tag.url}`)= tag.name

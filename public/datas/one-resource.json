@@ -1,0 +1,65 @@
+{
+  "id": 1,
+  "title": "Convenios firmados en los estados.",
+  "url": "convenios-firmados-en-los-estados",
+  "institution": "CONADIC",
+  "institution_url": "conadic",
+  "picture_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png",
+  "socials": [
+    {
+      "name": "Google+",
+      "url": "https://plus.google.com/share?url=https://datos.gob.mx/busca/dataset/convenios-firmados-en-los-estados"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/share?url=https://datos.gob.mx/busca/dataset/convenios-firmados-en-los-estados"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/sharer.php?u=https://datos.gob.mx/busca/dataset/convenios-firmados-en-los-estados"
+    }
+  ],
+  "report_url": "https://datos.gob.mx/organization/conadic/dataset/convenios-firmados-en-los-estados/",
+  "resources": [
+    {
+      "id": "fa945f3d-9c4a-46c1-a98d-c53adcaa16b2",
+      "slug": "actualizacion-convenio-con-los-estados-1er-trimestre-2018",
+      "title": "Actualización Convenio con los estados 1er. Trimestre 2018",
+      "text": "Convenios con los estados sobre el programa conduce sin alcohol, sesiones del consejo, COMCAS instaladas y jornadas deportivas y culturales 1er....",
+      "doctype": "CSV",
+      "doctype_pic_url": "https://cdn.datos.gob.mx/ckan/img/ic-csv.png",
+      "download_url": "https://bit.ly/2H8kxQo"
+    },
+    {
+      "id": "d4382d8a-91bf-432c-9205-5ec437d73f4f",
+      "slug": "tabla-de-convenios-con-los-estados-sobre-el-programa-conduce-sin-alcohol-en-el-ano-de-2017",
+      "title": "Tabla de convenios con los estados sobre el programa conduce sin alcohol en el año de 2017",
+      "text": "Convenios con los estados sobre el programa conduce sin alcohol, sesiones del consejo, COMCAS instaladas y jornadas deportivas y culturales.",
+      "doctype": "CSV",
+      "doctype_pic_url": "https://cdn.datos.gob.mx/ckan/img/ic-csv.png",
+      "download_url": "http://www.conadic.salud.gob.mx/prueba/convenios.csv"
+    }
+  ],
+  "metadatas": {
+    "mail": "judith.ortega@salud.gob.mx",
+    "frequency": "irregular",
+    "guid": "convenios-firmados-en-los-estados",
+    "language": "es",
+    "modified": "2018-03-31T00:00:00Z",
+    "publisher_name": "CONADIC",
+    "publisher_type": "Subdirectora",
+    "published": "2017-10-20T16:19:19Z",
+    "topic": "Salud",
+    "url": "http://www.conadic.salud.gob.mx/prueba/convenios.csv"
+  },
+  "tags": [
+    {
+      "name": "Conadic convenios",
+      "url": "Conadic+convenios"
+    },
+    {
+      "name": "Convenios con estados",
+      "url": "Convenios+con+estados"
+    }
+  ]
+}
