@@ -9,6 +9,7 @@ module.exports = (app) => {
 
   // Organization views
   app.get('/organization', organization.init)
+  app.get('/organization/:org', organization.orgDataset)
 
   // Group views
   app.get('/group', group.init)

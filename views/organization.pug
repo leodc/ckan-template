@@ -1,0 +1,50 @@
+extends layout
+block content
+  .container-fluid
+    .row: .col-md-12
+      h1.section-title Instituciones
+      #main-container: .row
+        #sidebar.col-md-3.col-sm-3
+          h3.institution-name= source.institution
+          p.text-center
+            a(href=`/organization/${source.institution_url}`)
+              img(src=source.picture_url, alt=source.institution, width='200')
+          .gray-bg.text-center
+            p
+              strong BETA: 
+              | ¿Buscas algo más?
+            a.btn.btn-primary(href="https://datos.gob.mx/informa/?organization=aem") Informa
+          include includes/filter-collapsible
+
+        #content.col-md-9.col-sm-9
+          header.module-content
+            a.btn.btn-danger.report(href=`https://datos.gob.mx/reportar/?media_url=${source.report_url}`) Reportar
+            ul.nav.nav-tabs.nav-header
+              li.active
+                a(href=`/dataset/${source.url}`)
+                  i.glyphicon.glyphicon-th-list
+                  |  Conjunto de datos
+              li
+                a(href=`/dataset/activity/${source.url}`)
+                  i.glyphicon.glyphicon-time
+                  |  Actividad
+              li
+                a(href=`/dataset/groups/${source.url}`)
+                  i.glyphicon.glyphicon-th-large
+                  |  Grupos
+          include includes/search-form
+          .row: .col-md-12: #datasets-container
+            each item in datasets
+              .dataset-item
+                .col-md-10.col-sm-10.col-xs-12
+                  h3
+                    span.tag-icon(class=item.tag_icon)
+                    a(href=item.tag_link)= item.title
+                  p= item.text
+                .col-md-2.col-sm-2.col-xs-12
+                  .dependency
+                    strong
+                      a(href=item.institution_link)
+                        = item.institution
+                  .dataset-format-container
+                    span.dataset-format(data-format=item.doc_type)= item.doc_type
