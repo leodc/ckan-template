@@ -1,12 +1,9 @@
-const datasetItems = require('../public/datas/dataset-items')
-const sidebarItems = require('../public/datas/sidebar-items')
-
 module.exports = {
   init(req, res) {
     res.render('dataset', {
       params: req.query,
-      filters: sidebarItems,
-      datasets: datasetItems,
+      filters: require('../public/datas/sidebar-items'),
+      datasets: require('../public/datas/dataset-items'),
       breadcrumbs: [{
         name: "Datos",
         link: "/dataset"

@@ -1,9 +1,7 @@
-const groups = require('../public/datas/groups-items')
-
 module.exports = {
   init(req, res) {
     res.render('group', {
-      groupItems: groups,
+      groupItems: require('../public/datas/groups-items'),
       breadcrumbs: [{
         name: "Grupos",
         link: "/groups"
