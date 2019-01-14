@@ -1,42 +1,80 @@
 [
   {
-    "id": 1,
-    "tag_icon": "tag-salud",
-    "tag_link": "/dataset/convenios-firmados-en-los-estados",
-    "title": "Convenios firmados en los estados.",
-    "text": "Convenios firmados en los estados.",
-    "institution": "CONADIC",
-    "institution_link": "/organization/conadic",
-    "doc_type": "CSV"
-  },
-  {
-    "id": 2,
-    "tag_icon": "tag-economia",
-    "tag_link": "/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
-    "title": "Indicadores Estratégicos/Población Subocupada por Nivel De Ingresos",
-    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
-    "institution": "STPS",
-    "institution_link": "/organization/stps",
-    "doc_type": "CSV"
-  },
-  {
-    "id": 3,
-    "tag_icon": "tag-economia",
-    "tag_link": "/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
-    "title": "Indicadores Estratégicos/Población Económicamente No Activa por Nivel De Instrucción",
-    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
-    "institution": "STPS",
-    "institution_link": "/organization/stps",
-    "doc_type": "CSV"
-  },
-  {
     "id": 4,
-    "tag_icon": "tag-economia",
-    "tag_link": "/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
+    "title": "Convenios firmados en los estados",
+    "name": "convenios-firmados-en-los-estados",
+    "description": "Convenios firmados en los estados.",
+    "resources": [
+      {
+        "format": "csv",
+        "url":"http://bit.ly/2oMm2Mw"
+      }
+    ],
+    "metadatas": {
+      "theme": "salud",
+      "frequency": "irregular",
+      "modified": "2018-08-24",
+      "published": "2017-10-20",
+      "publisher": "CONADIC",
+      "publisher_name": "conadic",
+      "publisher_logo": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png",
+      "dictionary": "http://www.conadic.salud.gob.mx/prueba/convenios.json",
+      "contact_point": "https://datos.gob.mx/busca/dataset/convenios-firmados-en-los-estados"
+    },
+    "tags": ["conadic-convenios", "convenios-con-estados"]
+  },
+
+  {
+    "id": 5,
+    "name": "indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos",
     "title": "Indicadores Estratégicos/Población Ocupada - Subordinada y Remunerada por Nivel De Ingresos",
-    "text": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
-    "institution": "STPS",
-    "institution_link": "/organization/stps",
-    "doc_type": "CSV"
+    "description": "Serie estadística que presenta la población que tiene una actividad económica en condición de subocupación para cada una de las entidades federativas, desglosada por sexo, grupos de edad y cual es el nivel de ingreso de esa población.",
+    "resources": [
+      {
+        "format": "csv",
+        "url":"http://bit.ly/2oMm2Mw"
+      }
+    ],
+    "metadatas": {
+      "frequency": "irregular",
+      "modified": "2018-10-24",
+      "published": "2017-10-20",
+      "publisher": "STPS",
+      "publisher_name": "stps",
+      "publisher_logo": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png",
+      "theme": "economia",
+      "dictionary": "http://www.conadic.salud.gob.mx/prueba/convenios.json",
+      "contact_point": "https://datos.gob.mx/busca/dataset/indicadores-estrategicos-poblacion-subocupada-por-nivel-de-ingresos"
+    },
+    "tags": ["indicadores-estrategicos", "poblacion"]
+  },
+
+  {
+    "id": 6,
+    "name": "beneficiarios-del-smsxxi-que-han-recibido-implante-coclear",
+    "title": "Beneficiarios del SMSXXI que han recibido implante coclear",
+    "description": "Tabla con información sobre el número de beneficiarios del Sistema de Protección Social en Salud desagregada por municipio a partir de 2004",
+    "resources": [
+      {
+        "format": "xlsx",
+        "url": "http://bit.ly/2oMm2Mw"
+      },
+      {
+        "format": "csv",
+        "url":"http://bit.ly/2oMm2Mw"
+      }
+    ],
+    "metadatas": {
+      "theme": "salud",
+      "frequency": "irregular",
+      "modified": "2018-12-13",
+      "published": "2017-10-20",
+      "publisher": "Seguro Popular",
+      "publisher_name": "seguro-popular",
+      "publisher_logo": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png",
+      "dictionary": "http://www.conadic.salud.gob.mx/prueba/convenios.json",
+      "contact_point": "https://datos.gob.mx/busca/dataset/beneficiarios-del-smsxxi-que-han-recibido-implante-coclear",
+    },
+    "tags": ["proteccion-social", "beneficiarios"]
   }
 ]
