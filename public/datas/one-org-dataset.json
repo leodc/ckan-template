@@ -1,9 +1,8 @@
 {
   "id": 1,
   "title": "Convenios firmados en los estados.",
-  "url": "convenios-firmados-en-los-estados",
-  "institution": "CONADIC",
-  "institution_url": "conadic",
-  "picture_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png",
-  "report_url": "https://datos.gob.mx/organization/conadic/dataset/convenios-firmados-en-los-estados/"
+  "name": "convenios-firmados-en-los-estados",
+  "institution_title": "CONADIC",
+  "institution": "conadic",
+  "picture_url": "https://raw.githubusercontent.com/mxabierto/assets/master/img/logos/conadic.png"
 }
